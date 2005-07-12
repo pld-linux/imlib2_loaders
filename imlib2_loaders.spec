@@ -1,4 +1,5 @@
 Summary:	Additional Loaders for Imlib2
+Summary(pl):	Dodatkowe biblioteki wczytuj±ce dla Imlib2
 Name:		imlib2_loaders
 Version:	1.2.1.001
 %define	_snap	20050704
@@ -22,6 +23,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains additional image loaders for Imlib2 which for
 some reason (such as license issues) are not distributed with Imlib2
 directly.
+
+%description -l pl
+Ten pakiet zawiera dodatkowe biblioteki wczytuj±ce obrazy dla Imlib2,
+które z jakiego¶ powodu (jak na przyk³ad problemy licencyjne) nie s±
+rozprowadzane bezpo¶rednio z bibliotek± Imlib2.
 
 %prep
 %setup -q -n %{name}
