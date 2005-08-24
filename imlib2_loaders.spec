@@ -1,20 +1,18 @@
 Summary:	Additional Loaders for Imlib2
 Summary(pl):	Dodatkowe biblioteki wczytuj±ce dla Imlib2
 Name:		imlib2_loaders
-Version:	1.2.1.001
-%define	_snap	20050704
-Release:	0.%{_snap}.0.1
+Version:	1.2.1.004
+Release:	1
 License:	Mixed (BSD and GPL)
 Group:		Libraries
-#Source0:	http://dl.sourceforge.net/enlightenment/%{name}-%{version}.tar.gz
-Source0:	http://sparky.homelinux.org/snaps/enli/e17/libs/%{name}-%{_snap}.tar.gz
-# Source0-md5:	ff63cea4860ae7c085895ab452cac179
+Source0:	http://enlightenment.freedesktop.org/files/%{name}-%{version}.tar.gz
+# Source0-md5:	554e93eefef26a00bc63aec15d0f913d
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	edb-devel
+BuildRequires:	edb-devel >= 1.0.5
 BuildRequires:	eet-devel
-BuildRequires:	imlib2-devel
+BuildRequires:	imlib2-devel >= 1.2.1
 BuildRequires:	libtool
 Requires:	imlib2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,7 +28,7 @@ które z jakiego¶ powodu (jak na przyk³ad problemy licencyjne) nie s±
 rozprowadzane bezpo¶rednio z bibliotek± Imlib2.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %{__libtoolize}
