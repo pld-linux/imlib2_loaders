@@ -1,12 +1,12 @@
 Summary:	Additional Loaders for Imlib2
 Summary(pl):	Dodatkowe biblioteki wczytuj±ce dla Imlib2
 Name:		imlib2_loaders
-Version:	1.2.1.010
+Version:	1.2.1.012
 Release:	1
 License:	Mixed (BSD and GPL)
 Group:		Libraries
 Source0:	http://enlightenment.freedesktop.org/files/%{name}-%{version}.tar.gz
-# Source0-md5:	d70d26cd1b1dc7a84dff0e75c234e529
+# Source0-md5:	191556aeb556041d46d2fd7ee8064374
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
