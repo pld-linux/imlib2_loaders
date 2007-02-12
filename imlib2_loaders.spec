@@ -1,5 +1,5 @@
 Summary:	Additional Loaders for Imlib2
-Summary(pl):	Dodatkowe biblioteki wczytuj±ce dla Imlib2
+Summary(pl.UTF-8):   Dodatkowe biblioteki wczytujÄ…ce dla Imlib2
 Name:		imlib2_loaders
 Version:	1.2.1.012
 Release:	1
@@ -22,10 +22,10 @@ This package contains additional image loaders for Imlib2 which for
 some reason (such as license issues) are not distributed with Imlib2
 directly.
 
-%description -l pl
-Ten pakiet zawiera dodatkowe biblioteki wczytuj±ce obrazy dla Imlib2,
-które z jakiego¶ powodu (jak na przyk³ad problemy licencyjne) nie s±
-rozprowadzane bezpo¶rednio z bibliotek± Imlib2.
+%description -l pl.UTF-8
+Ten pakiet zawiera dodatkowe biblioteki wczytujÄ…ce obrazy dla Imlib2,
+ktÃ³re z jakiegoÅ› powodu (jak na przykÅ‚ad problemy licencyjne) nie sÄ…
+rozprowadzane bezpoÅ›rednio z bibliotekÄ… Imlib2.
 
 %prep
 %setup -q
