@@ -1,5 +1,5 @@
 Summary:	Additional Loaders for Imlib2
-Summary(pl.UTF-8):   Dodatkowe biblioteki wczytujące dla Imlib2
+Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
 Version:	1.2.1.012
 Release:	1
