@@ -8,8 +8,8 @@ Group:		Libraries
 Source0:	http://download.enlightenment.org/snapshots/2008-01-25/%{name}-%{version}.tar.bz2
 # Source0-md5:	4b04b6b11e0e7ae8494fdc554a880429
 URL:		http://enlightenment.org/
-BuildRequires:	autoconf
-BuildRequires:	automake >= 1.4
+BuildRequires:	autoconf >= 2.52
+BuildRequires:	automake >= 1.6
 BuildRequires:	edb-devel >= 1.0.5
 BuildRequires:	eet-devel >= 1.0.1
 BuildRequires:	imlib2-devel >= 1.4.1.000
