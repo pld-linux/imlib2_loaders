@@ -2,18 +2,18 @@
 Summary:	Additional Loaders for Imlib2
 Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
-Version:	1.4.1.001
-Release:	0.%{_snap}.1
+Version:	1.4.2
+Release:	1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
-Source0:	%{name}-%{version}-%{_snap}.tar.bz2
-# Source0-md5:	0460e75267a1837c8a9136acc5b20254
+Source0:	http://dl.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
+# Source0-md5:	972f64c179035014b72243ccd6245c5e
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6
 BuildRequires:	edb-devel >= 1.0.5
 BuildRequires:	eet-devel >= 1.0.2
-BuildRequires:	imlib2-devel >= 1.4.1.001
+BuildRequires:	imlib2-devel >= 1.4.2
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 Requires:	imlib2 >= 1.4.1.001
@@ -30,7 +30,7 @@ które z jakiegoś powodu (jak na przykład problemy licencyjne) nie są
 rozprowadzane bezpośrednio z biblioteką Imlib2.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_snap}
+%setup -q
 
 %build
 %{__libtoolize}
