@@ -1,22 +1,21 @@
-%define		_snap	20080813
 Summary:	Additional Loaders for Imlib2
 Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
-Version:	1.4.2
+Version:	1.4.4
 Release:	1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
-# Source0-md5:	972f64c179035014b72243ccd6245c5e
+Source0:	http://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
+# Source0-md5:	22730ff2a402985b2a0c121603986d1f
 URL:		http://enlightenment.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6
 BuildRequires:	edb-devel >= 1.0.5
 BuildRequires:	eet-devel >= 1.0.2
-BuildRequires:	imlib2-devel >= 1.4.2
+BuildRequires:	imlib2-devel >= 1.4.4
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
-Requires:	imlib2 >= 1.4.1.001
+Requires:	imlib2 >= 1.4.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/imlib2/loaders/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/imlib2/loaders/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
