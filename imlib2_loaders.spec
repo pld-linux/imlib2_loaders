@@ -1,16 +1,20 @@
+#
+# Conditional build:
+%bcond_with	eet	# eet images support
+
 Summary:	Additional Loaders for Imlib2
 Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
-Version:	1.4.10
+Version:	1.7.0
 Release:	1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
-# Source0-md5:	0c5f36bb2bc52179280536fc4d9a5636
+# Source0-md5:	7e5f5daf3ee29bdf57782341e3d5e03b
 URL:		https://www.enlightenment.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6
-BuildRequires:	eet-devel >= 1.0.2
+%{?with_eet:BuildRequires:	eet-devel >= 1.0.2}
 BuildRequires:	imlib2-devel >= 1.4.10
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
@@ -32,13 +36,14 @@ rozprowadzane bezpośrednio z biblioteką Imlib2.
 
 %build
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
 %configure \
-	--enable-eet \
-	--enable-xcf
+	--disable-silent-rules \
+	--enable-eet%{!?with_eet:=no}
+
 %{__make}
 
 %install
@@ -56,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING COPYING-PLAIN README
 %attr(755,root,root) %{_libdir}/imlib2/loaders/ani.so
+%if %{with eet}
 %attr(755,root,root) %{_libdir}/imlib2/loaders/eet.so
-%attr(755,root,root) %{_libdir}/imlib2/loaders/ico.so
+%endif
 %attr(755,root,root) %{_libdir}/imlib2/loaders/xcf.so
