@@ -9,7 +9,7 @@ Version:	1.7.2
 Release:	1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
+Source0:	https://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
 # Source0-md5:	831fe8d8585a7267a10bd9554e222058
 URL:		https://www.enlightenment.org/
 BuildRequires:	autoconf >= 2.52
