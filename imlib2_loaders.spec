@@ -5,12 +5,12 @@
 Summary:	Additional Loaders for Imlib2
 Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
-Version:	1.7.4
-Release:	1
+Version:	1.9.0
+Release:	0.1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
-Source0:	https://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.bz2
-# Source0-md5:	54c2000916012bb7bedf2348c2af38c6
+Source0:	https://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.xz
+# Source0-md5:	59a85348fb8f28cb159d46c457ef8035
 URL:		https://www.enlightenment.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6
