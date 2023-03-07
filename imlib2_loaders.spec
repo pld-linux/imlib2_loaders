@@ -5,22 +5,22 @@
 Summary:	Additional Loaders for Imlib2
 Summary(pl.UTF-8):	Dodatkowe biblioteki wczytujące dla Imlib2
 Name:		imlib2_loaders
-Version:	1.9.1
+Version:	1.10.0
 Release:	1
 License:	GPL v2+ (XCF loader), BSD-like (the rest)
 Group:		Libraries
 Source0:	https://downloads.sourceforge.net/enlightenment/%{name}-%{version}.tar.xz
-# Source0-md5:	89c3cc0bb4a4fca168523af37ae2de1e
+# Source0-md5:	71bea12aefbac970c33c7da69075bc36
 URL:		https://www.enlightenment.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.6
 %{?with_eet:BuildRequires:	eet-devel >= 1.0.2}
-BuildRequires:	imlib2-devel >= 1.4.10
+BuildRequires:	imlib2-devel >= 1.10.0
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	imlib2 >= 1.4.10
+Requires:	imlib2 >= 1.10.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -62,7 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING COPYING-PLAIN README
-%attr(755,root,root) %{_libdir}/imlib2/loaders/ani.so
 %if %{with eet}
 %attr(755,root,root) %{_libdir}/imlib2/loaders/eet.so
 %endif
